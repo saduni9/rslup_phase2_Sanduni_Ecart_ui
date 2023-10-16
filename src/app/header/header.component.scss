@@ -1,0 +1,183 @@
+.ecart--header {
+    display: flex;
+    align-items: center;
+    background-color: #67a941; 
+    color: #fff; 
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+
+   
+    .ecart-logo {
+        font-size: 35px; 
+        font-weight: bold; 
+        color: #fff; 
+        text-transform: uppercase; 
+        margin-right: 20px;
+        font-family: 'Concert One', sans-serif; 
+    }
+
+   
+    .ecart--header-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        
+        .ecart-top-bar a {
+            color: #fff; 
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        
+    }
+
+
+    
+    
+
+        
+        .ecart-menu a {
+            color: #fff; 
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        
+        .ecart-searchbar {
+            display: flex;
+            align-items: center;
+
+            .ecart-search-box {
+                padding: 5px;
+                border: 1px solid #ccc; 
+                border-radius: 3px;
+                margin-right: 10px;
+            }
+
+            .ecart-search-btn {
+                background-color: #84a67e; 
+                color: #fff; 
+                border: none;
+                padding: 5px 10px;
+                border-radius: 3px;
+                cursor: pointer;
+                width: 35px;
+                height: 25px;
+
+                // Style the search button icon
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    // Hover effect for links and buttons
+    a:hover,
+    .ecart-search-btn:hover {
+        text-decoration: underline;
+    }
+
+    .home-content {
+        text-align: center;
+
+        .btn{
+                background-color: #f9a27a; 
+                color: #fff; 
+                border: none;
+                padding: 5px 10px;
+                border-radius: 3px;
+                cursor: pointer;
+                width: 100px;
+                height: 30px;
+        }
+
+    
+      
+        h1 {
+          font-size: 36px;
+          color: #59506c;
+          margin-bottom: 20px;
+          font-weight: 40000;
+        }
+      
+        p {
+          font-size: 18px;
+          color: #666;
+          margin-bottom: 30px;
+          font-weight: bold;
+          font-style: italic;
+        }
+      
+        .product-list {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+      
+          .product-item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+      
+            img {
+                width: 200px; 
+                height: 200px; 
+                border-radius: 5px;
+              }
+      
+            h2 {
+              font-size: 24px;
+              color: #333;
+              margin: 10px 0;
+            }
+      
+            p {
+              font-size: 16px;
+              color: #666;
+            }
+          }
+        }
+      
+        .featured-items {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+          
+      
+          h2 {
+            width: 100%;
+            font-size: 24px;
+            color: #333;
+            margin: 20px 0;
+            font-weight: bold;
+          }
+      
+          .featured-item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+      
+            img {
+              max-width: 100%;
+              border-radius: 5px;
+                width: 200px; 
+                height: 200px; 
+                border-radius: 5px;
+            
+            }
+      
+            h3 {
+              font-size: 20px;
+              color: #333;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+      
+
