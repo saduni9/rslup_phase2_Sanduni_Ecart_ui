@@ -1,0 +1,106 @@
+.centered-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 80vh; 
+  }
+.login-container {
+    text-align: center; 
+    padding: 50px; 
+    border: 1px solid #4cbc42;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #255012;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+    button {
+      width: 100%;
+      background-color: #074a0c;
+      color: #eeeeee;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+  
+      &:hover {
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #0a7d38;
+      }
+    }
+
+    .register-button {
+        color: #ffffff; 
+        background-color: #ff0000;
+         
+        padding: 10px 20px;
+        margin-top: 10px; 
+        cursor: pointer;
+        border-radius: 5px; 
+        font-size: 16px; /* Adjust the font size as needed */
+        &:hover {
+            background-color: #fcfcfc;
+            color: #000000;
+            border: 2px solid #ff0000;
+          }
+      }
+  }
+  
+  /* Define styles for mat-form-field */
+  mat-form-field {
+    width: 100%;
+    
+  }
+  
+  
+  mat-error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  
+  button.mat-icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  mat-label{
+    font-size: small;
+  }
+
+  
+   .input{
+    font-size: small;
+   }
+  
+.wide-form-field {
+    width: 100%;
+    height: 65px; 
+  }
+
+
+
+
+
+  
+  
+  
+  
+  
