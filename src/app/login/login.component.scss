@@ -30,7 +30,7 @@
   
     button {
       width: 100%;
-      background-color: #074a0c;
+      background-color: #11074a;
       color: #eeeeee;
       border: none;
       padding: 10px;
@@ -41,25 +41,11 @@
       &:hover {
         background-color: #ffffff;
         color: #000;
-        border: 2px solid #0a7d38;
+        border: 2px solid #0a1b7d;
       }
     }
 
-    .register-button {
-        color: #ffffff; 
-        background-color: #ff0000;
-         
-        padding: 10px 20px;
-        margin-top: 10px; 
-        cursor: pointer;
-        border-radius: 5px; 
-        font-size: 16px; /* Adjust the font size as needed */
-        &:hover {
-            background-color: #fcfcfc;
-            color: #000000;
-            border: 2px solid #ff0000;
-          }
-      }
+    
   }
   
   /* Define styles for mat-form-field */
@@ -101,7 +87,9 @@
     margin-right: 20px;
     font-size: small;
   }
-
+  .login-image{
+    width: 75%;
+  }
 
 
   
