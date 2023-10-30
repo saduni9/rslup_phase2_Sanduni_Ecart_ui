@@ -30,7 +30,7 @@
   
     button {
       width: 100%;
-      background-color: #074a0c;
+      background-color: #07264d;
       color: #eeeeee;
       border: none;
       padding: 10px;
@@ -41,7 +41,7 @@
       &:hover {
         background-color: #ffffff;
         color: #000;
-        border: 2px solid #0a7d38;
+        border: 2px solid #0a277d;
       }
     }
 
@@ -95,7 +95,9 @@
     height: 65px; 
   }
 
-
+  .login-image{
+    width: 75%;
+  }
 
 
 
