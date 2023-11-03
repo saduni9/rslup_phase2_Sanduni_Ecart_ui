@@ -1,0 +1,14 @@
+<div class="user-list">
+    <div *ngFor="let user of users" class="user-item">
+      <span>{{ user.name }}</span>
+      <span>{{ user.email }}</span>
+      <button (click)="deleteUser(user.id)">Delete</button>
+    </div>
+  
+    <div class="add-user">
+      <input [(ngModel)]="newUser.name" placeholder="Name" />
+      <input [(ngModel)]="newUser.email" placeholder="Email" />
+      <button (click)="addNewUser()">Add User</button>
+    </div>
+  </div>
+  

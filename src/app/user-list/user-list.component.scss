@@ -1,0 +1,19 @@
+.user-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .user-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+  }
+  
+  .add-user {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
