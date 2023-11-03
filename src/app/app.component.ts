@@ -7,10 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'EcartProject';
+  title = 'AGMS';
   constructor(private router: Router) {}
 
   navigateToRegisterPage() {
-    this.router.navigate(['/register']);
+    this.router.navigate(['/login']);
   }
 }
