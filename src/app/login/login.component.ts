@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '../services/auth.service'; // Import the AuthService
+import { AuthService } from '../services/auth.service'; 
 import { FormControl, Validators,ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -12,27 +12,23 @@ export class LoginComponent {
   email = new FormControl('', [Validators.required, Validators.email]);
   hide: boolean = true;
 
-  userEmail: string = ''; // Declare and initialize userEmail
-  userPassword: string = ''; // Declare and initialize userPassword
+  userEmail: string = ''; 
+  userPassword: string = ''; 
 
-  constructor(private router: Router, private authService: AuthService) {} // Inject AuthService
+  constructor(private router: Router, private authService: AuthService) {}
 
   login() {
     if (this.email.value) {
       this.userEmail = this.email.value;
     }
 
-    this.userPassword = ''; // You should get the user's password input value
-
-    // Call the login method from the AuthService
+    this.userPassword = ''; 
     this.authService.login(this.userEmail, this.userPassword).subscribe(
       (response: any) => {
-        // Successful login, handle the response as needed
         alert('Login successful');
         this.router.navigate(['/dashboard']); 
       },
       (error: any) => {
-        // Handle login failure
         console.error('Login failed:', error);
         
       }
