@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { RouterModule } from '@angular/router';
 
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -17,6 +18,9 @@ import { UserService } from './services/user.service';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';  
+import { HttpClientModule } from '@angular/common/http';
+
+
  
 
   
@@ -43,6 +47,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     MatInputModule,
     MatIconModule,
     ReactiveFormsModule,
+    RouterModule,
+    HttpClientModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent],

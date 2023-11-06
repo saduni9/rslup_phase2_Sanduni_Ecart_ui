@@ -7,7 +7,7 @@ import './user-details.component.scss';
 @Component({
   selector: 'app-user-details',
   templateUrl: './user-details.component.html',
-  styleUrls: ['./user-details.component.css'],
+  styleUrls: ['./user-details.component.scss'],
 })
 export class UserDetailsComponent implements OnInit {
   userForm!: FormGroup;
@@ -21,7 +21,8 @@ export class UserDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.initForm();
-    const userId = +this.route.snapshot.paramMap.get('id') || 0;
+    const userId = +this.route.snapshot.paramMap.get('id')! || 0;
+
 
     if (userId) {
       
@@ -55,11 +56,10 @@ export class UserDetailsComponent implements OnInit {
         
       }
       console.log('User data to save:', user);
-      // Redirect to the user list page (You can use router.navigate)
+      
       this.router.navigate(['/users']);
     } else {
-      // Handle form validation errors
-      // You can display error messages or perform other actions
+      
     }
   }
 }

@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+
+interface ResetPasswordResponse {
+  message: string; // Define the structure of your response here
+}
 
 @Component({
   selector: 'app-forgot-password',
@@ -7,22 +12,36 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./forgot-password.component.scss']
 })
 export class ForgotPasswordComponent {
-  forgotPasswordForm: FormGroup; // Define the form group
-  errorMessage: string = ''; // Initialize error message as an empty string
+  forgotPasswordForm: FormGroup;
+  errorMessage: string = '';
+  successMessage: string = '';
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) {
     this.forgotPasswordForm = this.formBuilder.group({
-      // Define your form controls here
       email: ['', [Validators.required, Validators.email]]
     });
   }
 
   onSubmit() {
     if (this.forgotPasswordForm.valid) {
-      // Implement the logic for form submission
-      // For example, you can send a reset password request
+      const email = this.forgotPasswordForm.get('email')?.value;
+
+      const resetPasswordData = { email };
+
+      this.http.post<ResetPasswordResponse>('RESET_PASSWORD_API_ENDPOINT', resetPasswordData).subscribe(
+        (response) => {
+          this.successMessage = 'Password reset email sent. Check your email for instructions.';
+          this.errorMessage = '';
+        },
+        (error) => {
+          this.errorMessage = 'Email not found. Please check your email address.';
+          this.successMessage = '';
+        }
+      );
     } else {
-      this.errorMessage = 'type valid email.';
+      this.errorMessage = 'Please provide a valid email address.';
+      this.successMessage = 'Email sent successfully';
     }
   }
 }
+
