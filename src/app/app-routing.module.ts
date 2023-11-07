@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { HomeComponent } from './passenger/home/home.component';
+import { HeaderComponent } from './passenger/header/header.component';
+import { LoginComponent } from './passenger/login/login.component';
+import { RegisterComponent } from './passenger/register/register.component';
+import { ForgotPasswordComponent } from './passenger/forgot-password/forgot-password.component';
 import { UserListComponent } from './user-list/user-list.component';
 
 const routes: Routes = [
