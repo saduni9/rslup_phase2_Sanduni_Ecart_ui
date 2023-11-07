@@ -3,6 +3,8 @@
     justify-content: center; 
     align-items: center; 
     height: 80vh; 
+    margin-left: 250px;
+  
   }
 .login-container {
     text-align: center; 
@@ -11,7 +13,7 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 20px;
-    
+    margin-left: 200px;
   
     h2 {
       text-align: center;
@@ -87,12 +89,19 @@
     margin-right: 20px;
     font-size: small;
   }
-  .login-image{
-    width: 75%;
-  }
 
 
+ 
+.image-container{
+  width: 75%;
+  height: 55%;
   
+}
+
+.login-image{
+  width: 40%;
+  height: auto;
+}
   
   
   

@@ -73,6 +73,24 @@
             }
         }
     }
-
-    // Hover effect for links and buttons
-   
+    .auth-buttons {
+        display: flex;
+        gap: 10px;
+        margin-left: 50%; /* Pushes the buttons to the right */
+    }
+    
+    .auth-buttons button {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .auth-buttons button:hover {
+        background-color: #ffffff;
+        color: #000;
+    }
+    
