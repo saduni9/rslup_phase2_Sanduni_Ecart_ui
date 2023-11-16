@@ -12,12 +12,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './passenger/register/register.component';
 import { UserService } from './services/user.service';
 import { ForgotPasswordComponent } from './passenger/forgot-password/forgot-password.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { UserDetailsComponent } from './user-details/user-details.component';  
+import { UserListComponent } from './admin/user-list/user-list.component';
+import { UserDetailsComponent } from './admin/user-details/user-details.component';  
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -49,6 +50,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     RouterModule,
     HttpClientModule,
+    MatButtonModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent],
