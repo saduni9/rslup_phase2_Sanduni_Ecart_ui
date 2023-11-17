@@ -20,6 +20,7 @@ import { ForgotPasswordComponent } from './passenger/forgot-password/forgot-pass
 import { UserListComponent } from './admin/user-list/user-list.component';
 import { UserDetailsComponent } from './admin/user-details/user-details.component';  
 import { HttpClientModule } from '@angular/common/http';
+import { BookFlightComponent } from './passenger/book-flight/book-flight.component';
 
 
  
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     ForgotPasswordComponent,
     UserListComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    BookFlightComponent
   ],
   imports: [
     BrowserModule,
