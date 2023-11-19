@@ -5,13 +5,11 @@ import { Component, OnInit } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
 @NgModule({
-  declarations: [AvailableSeatsComponent],
+ // declarations: [AvailableSeatsComponent], // <-- Error: AvailableSeatsComponent is not a module, it's a component
   imports: [CommonModule],
-  exports: [AvailableSeatsComponent], 
+ // exports: [AvailableSeatsComponent], 
 })
-
 
 export class AvailableSeatsComponent implements OnInit {
   availableSeats: string[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']; // Sample data, replace with actual data
