@@ -1,0 +1,70 @@
+/* seat.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  h2 {
+    color: blue;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .seat-class {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  h3 {
+    color: #555;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .seat-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .seat-item {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .seat-item:hover {
+    background-color: #ccc;
+  }
+  
+  .business-class {
+    background-color: #f0f8ff; /* Light Blue */
+  }
+  
+  .business-seat {
+    background-color: #add8e6; /* Light Blue */
+  }
+  
+  .economy-class {
+    background-color: #ffe4b5; /* Moccasin */
+  }
+  
+  .economy-seat {
+    background-color: #ffd700; /* Gold */
+  }
+  
