@@ -9,6 +9,8 @@ import { UserListComponent } from './admin/user-list/user-list.component';
 import { UserDetailsComponent } from './admin/user-details/user-details.component';
 import { BookFlightComponent } from './passenger/book-flight/book-flight.component';
 import { AvailableSeatsComponent } from './passenger/available-seats/available-seats.component';
+import { SeatsComponent } from './passenger/seats/seats.component';
+
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,7 +21,8 @@ const routes: Routes = [
   { path: 'user-list', component: UserListComponent },
   {path: 'user-details',component:UserDetailsComponent},
   { path: 'book-flight', component: BookFlightComponent },
-  {path: 'available-seats',component:AvailableSeatsComponent}
+  {path: 'available-seats',component:AvailableSeatsComponent},
+   {path: 'seats', component:SeatsComponent}
 ];
 
 @NgModule({
