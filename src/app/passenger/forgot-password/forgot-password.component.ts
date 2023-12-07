@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 interface ResetPasswordResponse {
-  message: string; // Define the structure of your response here
+  message: string; 
 }
 
 @Component({
