@@ -1,15 +1,14 @@
 
-<h2>Available Seats</h2>
-
-<div class="seat-container business-class">
-  <h3>Business Class</h3>
+<section class="seat-container business-class">
+  <h2>Business Class</h2>
   <div *ngFor="let seat of businessClassSeats" class="seat-item business-class">
     {{ seat }}
   </div>
-</div>
-<div class="seat-container economy-class">
-  <h3>Economy Class</h3>
+</section>
+
+<section class="seat-container economy-class">
+  <h2>Economy Class</h2>
   <div *ngFor="let seat of economyClassSeats" class="seat-item economy-class">
     {{ seat }}
   </div>
-</div>
+</section>
